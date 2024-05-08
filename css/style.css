@@ -94,6 +94,9 @@ body {
 
 .hotel-view {
   flex: 1;
+  background-color: orange;
+
+  height: 80rem;
 }
 
 /* Header */
@@ -211,4 +214,30 @@ nav.user-nav > *:hover {
 .user-nav__user-name {
   font-weight: 500;
   text-transform: uppercase;
+}
+
+/* Sidebar navigation */
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.side-nav {
+}
+
+.side-nav__link {
+}
+
+.side-nav__icon {
+  width: 1.75rem;
+  height: 1.75rem;
+}
+
+.legal p {
+  font-size: 1.2rem;
+  color: var(--color-grey-light-4);
+  text-align: center;
+  padding: 4rem;
 }
