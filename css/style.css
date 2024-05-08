@@ -33,7 +33,10 @@ Grey dark 3: #999
   --shadow-dark: 0 2rem 6rem rgba(0, 0, 0, 0.3);
 }
 
-/* Default reset */
+/* ===============================================
+==================================================
+======== Default reset
+ */
 * {
   padding: 0;
   margin: 0;
@@ -94,12 +97,12 @@ body {
 
 .hotel-view {
   flex: 1;
-  background-color: orange;
-
-  height: 80rem;
 }
 
-/* Header */
+/* ===============================================
+==================================================
+======== Header
+ */
 
 header.header {
   display: flex;
@@ -216,7 +219,10 @@ nav.user-nav > *:hover {
   text-transform: uppercase;
 }
 
-/* Sidebar navigation */
+/* ===============================================
+==================================================
+======== Sidebar navigation
+ */
 
 .sidebar {
   display: flex;
@@ -281,4 +287,81 @@ nav.user-nav > *:hover {
   color: var(--color-grey-light-1);
   text-align: center;
   padding: 4rem;
+}
+
+/* ===============================================
+==================================================
+======== Hotel overview
+ */
+.hotel-view {
+}
+
+.hotel__heading {
+  font-weight: 100;
+  color: var(--color-grey-dark-2);
+  text-transform: uppercase;
+}
+
+.overview {
+  display: flex;
+  justify-content: space-between;
+}
+
+.overview__stars {
+  display: flex;
+  align-items: center;
+}
+
+.overview__icon {
+  width: 1.7rem;
+  height: 1.7rem;
+  fill: var(--color-primary);
+}
+.overview__right {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 1rem 2rem;
+}
+.gallery {
+  display: flex;
+}
+
+.gallery__item {
+}
+
+.gallery__photo {
+  max-width: 100%;
+  display: block;
+}
+
+.overview__left {
+  display: flex;
+  gap: 2rem;
+}
+
+.overview__location {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+
+.location:link,
+.location:visited {
+  color: var(--color-primary);
+  font-size: 1.2rem;
+}
+
+.vote__number {
+  font-size: 1.6rem;
+}
+
+.overview__vote {
+  background-color: var(--color-primary);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 1rem 2rem;
 }
