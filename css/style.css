@@ -480,7 +480,6 @@ nav.user-nav > *:hover {
   height: 4rem;
   border-radius: 50%;
   border: 3px solid #fff;
-  transition: all 0.2s ease-in;
 }
 
 .recommend__photo:not(:last-child) {
