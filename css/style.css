@@ -394,3 +394,94 @@ nav.user-nav > *:hover {
   flex-direction: column;
   padding: 1rem 2rem;
 }
+
+/* ===============================================
+=================================================
+=========== Details part
+ */
+
+.details {
+  display: flex;
+  gap: 5.5rem;
+  padding: 4.5rem;
+  background-color: var(--color-grey-light-1);
+  border-bottom: 1px solid var(--color-grey-light-2);
+}
+
+.descriptions {
+  background-color: #fff;
+  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.09);
+  padding: 3rem;
+  font-size: 1.4rem;
+  flex: 0 0 60%;
+}
+
+.user-reviews {
+  background-color: yellowgreen;
+  flex: 1;
+}
+
+.list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 3rem 0;
+  padding: 3rem 0;
+  list-style: none;
+  border-bottom: 1px solid var(--color-grey-light-2);
+  border-top: 1px solid var(--color-grey-light-2);
+}
+
+.list__item {
+  flex: 0 0 50%;
+}
+
+.list__item:not(:last-child) {
+  margin-bottom: 0.7rem;
+}
+
+.list__item::before {
+  content: "";
+  display: inline-block;
+  height: 1.2rem;
+  width: 1.2rem;
+  margin-right: 0.9rem;
+  background-color: var(--color-primary);
+  mask-image: url(../img/chevron-thin-right.svg);
+  mask-size: cover;
+}
+
+.paragraph:not(:last-of-type) {
+  margin-bottom: 2rem;
+}
+
+/* 
+=========================================================
+========================================================
+========= RECOMMEND 
+*/
+
+.recommend {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.recommend__count {
+  color: var(--color-grey-dark-3);
+  font-size: 1.3rem;
+}
+
+.recommend__friend {
+}
+
+.recommend__photo {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  border: 3px solid #fff;
+}
+
+.recommend__photo:not(:last-child) {
+  margin-right: -1.5rem;
+}
