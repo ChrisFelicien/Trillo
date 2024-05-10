@@ -454,3 +454,34 @@ nav.user-nav > *:hover {
 .paragraph:not(:last-of-type) {
   margin-bottom: 2rem;
 }
+
+/* 
+=========================================================
+========================================================
+========= RECOMMEND 
+*/
+
+.recommend {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.recommend__count {
+  color: var(--color-grey-dark-3);
+  font-size: 1.3rem;
+}
+
+.recommend__friend {
+}
+
+.recommend__photo {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  border: 3px solid #fff;
+}
+
+.recommend__photo:not(:last-child) {
+  margin-right: -1.5rem;
+}
