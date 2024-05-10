@@ -109,6 +109,7 @@ header.header {
   justify-content: space-between;
   align-items: center;
   font-size: 1.4rem;
+  border-bottom: 1px solid var(--color-grey-light-3);
 }
 
 .logo {
@@ -297,19 +298,23 @@ nav.user-nav > *:hover {
 }
 
 .hotel__heading {
-  font-weight: 100;
+  font-weight: 300;
+  font-size: 2.25rem;
   color: var(--color-grey-dark-2);
   text-transform: uppercase;
+  padding: 1.5rem 3rem;
 }
 
 .overview {
   display: flex;
   justify-content: space-between;
+  border-bottom: 1px solid var(--color-grey-light-3);
 }
 
 .overview__stars {
   display: flex;
   align-items: center;
+  justify-items: center;
 }
 
 .overview__icon {
@@ -320,8 +325,6 @@ nav.user-nav > *:hover {
 .overview__right {
   display: flex;
   align-items: center;
-  gap: 2rem;
-  padding: 1rem 2rem;
 }
 .gallery {
   display: flex;
@@ -350,6 +353,32 @@ nav.user-nav > *:hover {
 .location:visited {
   color: var(--color-primary);
   font-size: 1.2rem;
+  text-decoration: none;
+  display: inline-block;
+  padding-bottom: 0.2rem;
+  border-bottom: 1px solid currentColor;
+  transition: scale 3s ease;
+}
+
+.location:focus {
+  animation-name: link-hover;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes link-hover {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    color: var(--color-primary-dark);
+    transform: scale(1.04);
+  }
+
+  100% {
+    transform: scale(1);
+  }
 }
 
 .vote__number {
