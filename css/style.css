@@ -416,11 +416,6 @@ nav.user-nav > *:hover {
   flex: 0 0 60%;
 }
 
-.user-reviews {
-  background-color: yellowgreen;
-  flex: 1;
-}
-
 .list {
   display: flex;
   align-items: center;
@@ -484,4 +479,68 @@ nav.user-nav > *:hover {
 
 .recommend__photo:not(:last-child) {
   margin-right: -1.5rem;
+}
+
+/* 
+=========================================================
+========================================================
+========= REVIEWS 
+*/
+
+.user-reviews {
+  flex: 1;
+}
+.user-reviews__card {
+  background-color: #fff;
+  padding: 2rem 3rem;
+}
+
+.user-reviews__card:not(:last-child) {
+  margin-bottom: 3rem;
+}
+
+.user-reviews__card--header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.8rem;
+}
+
+.user-reviews__card--header img {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+}
+
+.user__info--id {
+  color: var(--color-grey-dark-2);
+}
+
+.user--name {
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.date {
+  font-weight: 400;
+}
+
+.quote__number {
+  color: var(--color-primary);
+  font-size: 1.9rem;
+}
+
+.user__info {
+  margin-right: auto;
+  margin-left: 1.5rem;
+}
+
+.user-reviews__card--content {
+  padding-left: 4rem;
+  text-align: justify;
+}
+
+.user-reviews__text {
+  font-size: 1.35rem;
+  color: var(--color-grey-dark-2);
 }
