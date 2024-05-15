@@ -294,8 +294,6 @@ nav.user-nav > *:hover {
 ==================================================
 ======== Hotel overview
  */
-.hotel-view {
-}
 
 .hotel__heading {
   font-weight: 300;
@@ -635,4 +633,37 @@ nav.user-nav > *:hover {
 .btn:hover .btn_text_hidden {
   background-color: 000;
   top: 0;
+}
+
+/* ================================
+===================================
+=========== MEDIA QUERIES =========
+===================================
+===================================
+ */
+
+@media only screen and (max-width: 1200px) {
+  .container {
+    margin: 0;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .content {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    flex-direction: row;
+    flex: 0 0 100%;
+    align-items: stretch;
+  }
+
+  .side-nav {
+    display: flex;
+    flex: 0 0 100%;
+    justify-content: stretch;
+  }
+  .legal {
+    display: none;
+  }
 }
