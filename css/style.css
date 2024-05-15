@@ -582,10 +582,10 @@ nav.user-nav > *:hover {
 
 .btn {
   border: none;
-  padding: 2rem 4rem;
+  /* padding: 2rem 4rem; */
   font-size: 1.6rem;
+  font-weight: 300;
   border-radius: 20rem;
-  width: 25rem;
   text-transform: uppercase;
   color: #fff;
   background-color: transparent;
@@ -596,40 +596,43 @@ nav.user-nav > *:hover {
   );
 
   transition: all 0.7s ease;
-}
-
-.btn-container {
   position: relative;
-  width: 25rem;
-  margin: auto;
   overflow: hidden;
 }
 
-.btn::before {
-  content: "Only 4 rooms left";
+.btn_text_visible {
+  display: inline-block;
+  padding: 2rem 7.5rem;
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s;
+}
+
+.btn_text_hidden {
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  top: -100%;
+  padding: 2rem 0;
+  white-space: nowrap;
+  width: 100%;
+  height: 100%;
+  border-radius: 10rem;
+  transition: all 0.2s;
+}
+
+.btn:hover {
   background-image: linear-gradient(
     to right,
     var(--color-primary-dark),
     var(--color-primary)
   );
-  position: absolute;
-  top: -100%;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: block;
-  border-radius: 10rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  /* transform: translateY(-100%); */
-  transition: all 0.1s ease-out;
 }
 
-.btn-container:hover .btn::before {
+.btn:hover .btn_text_visible {
+  transform: translateY(100%);
+}
+.btn:hover .btn_text_hidden {
+  background-color: 000;
   top: 0;
-}
-
-.btn-container:hover .btn {
-  top: -100%;
 }
